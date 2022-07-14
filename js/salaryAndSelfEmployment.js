@@ -71,9 +71,9 @@
    * @param {string} startDate 
    * @param {string} endDate 
    */
-  // const createURL = (startDate, endDate) => `${BASE_URL}startDate=${startDate}&endDate=${endDate}`;
+  const createURL = (startDate, endDate, url) => `${url}startDate=${startDate}&endDate=${endDate}`;
   //const createURL = () => `${BASE_URL}`;
-  const createURL = (startDate, endDate, url) => `${url}`;
+  //const createURL = (startDate, endDate, url) => `${url}`;
 
   /**
    * Возвращает строковый вариант месяца по его порядковому номеру
