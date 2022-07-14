@@ -1,0 +1,106 @@
+{
+  "employees": [
+    {
+      "id": 87,
+      "login": "aivanov",
+      "name": "Ivan",
+      "surname": "Ivanov",
+      "payments": [
+        {
+          "2019": {
+            "nov": {
+              "efforts": 100,
+              "currency": "RUB",
+              "accrued": {
+                "salary": 10000,
+                "vacation_pays": 2000,
+                "bonus": 1000,
+                "sick_pay": 300,
+                "medical_pay": 500,
+                "benefit": 100,
+                "extra": 300,
+                "total": 20000
+              },
+              "paid_llp": {
+                "credit": 500,
+                "prepayment": 200,
+                "llp_1": 300,
+                "llp_2": 400,
+                "llp_overpaid": 10
+              },
+              "paid_llc": {
+                "cards_1": 100,
+                "cards_2": 100,
+                "cards_3": 100,
+                "cards_4": 100
+              },
+              "overpaid": 100
+            },
+            "dec": {
+              "efforts": 100,
+              "currency": "RUB",
+              "accrued": {
+                "salary": 10000,
+                "vacation_pays": 2000,
+                "bonus": 1000,
+                "sick_pay": 300,
+                "medical_pay": 500,
+                "benefit": 100,
+                "extra": 300,
+                "total": 20000
+              },
+              "paid_llp": {
+                "credit": 500,
+                "prepayment": 200,
+                "llp_1": 300,
+                "llp_2": 400,
+                "llp_3": 500,
+                "llp_overpaid": 10
+              },
+              "paid_llc": {
+                "cards_1": 100,
+                "cards_2": 100,
+                "cards_3": 100,
+                "cards_4": 100
+              },
+              "overpaid": 100
+            }
+          }
+        },
+        {
+          "2020": {
+            "jan": {
+              "efforts": 100,
+              "currency": "RUB",
+              "accrued": {
+                "salary": 10000,
+                "vacation_pays": 2000,
+                "bonus": 1000,
+                "sick_pay": 300,
+                "medical_pay": 500,
+                "benefit": 100,
+                "extra": 300,
+                "total": 20000
+              },
+              "paid_llp": {
+                "credit": 500,
+                "prepayment": 200,
+                "llp_1": 300,
+                "llp_2": 400,
+                "llp_3": 500,
+                "llp_overpaid": 10
+              },
+              "paid_llc": {
+                "cards_1": 100,
+                "cards_2": 100,
+                "cards_3": 100,
+                "cards_4": 100
+              },
+              "overpaid": 100
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
