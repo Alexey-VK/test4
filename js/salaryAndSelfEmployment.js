@@ -18,8 +18,8 @@
         dataType: tableau.dataTypeEnum.string,
       },
       {
-        id: "currency",
-        alias: "Salary currency of employee",
+        id: "salary_currency",
+        alias: "Salary Currency",
         dataType: tableau.dataTypeEnum.string,
       },
       {
@@ -97,8 +97,8 @@
     if (payments) {
       for (let year in payments) {
         for (let month in payments[year]) {
-          const { currency, efforts, accrued } = payments[year][month];
-          const { total } = accrued;
+          const { efforts, accrued } = payments[year][month];
+          const { total, salary_currency } = accrued;
           //const { cards_1, cards_2, cards_3, cards_4 } = paid_llc;
           //const { inc_1, inc_2, inc_overpaid, prepayment } = paid_inc;
           const monthNum = getNumberByMonth(month);
@@ -110,7 +110,7 @@
             //name,
             //surname,
             date,
-            currency,
+            salary_currency,
             efforts,
             //overpaid,
             //benefit, 
