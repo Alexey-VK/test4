@@ -18,8 +18,8 @@
         dataType: tableau.dataTypeEnum.string,
       },
       {
-        id: "salary_currency",
-        alias: "Salary Currency",
+        id: "currency",
+        alias: "Salary currency",
         dataType: tableau.dataTypeEnum.string,
       },
       {
@@ -43,9 +43,10 @@
     schemaCallback([tableSchema]);
   };
 
-  const API_KEY = "123";
-  const SALARY_URL = `http://sv-dev.noveogroup.com/api/getPayments?token=${API_KEY}&`;
-  const EMPLOYEE_URL = `https://se-demo.noveogroup.com/api/getPayments?token=${API_KEY}&`;
+  const SALARY_API_KEY = "123";
+  const EMPLOYEE_API_KEY = "123";
+  const SALARY_URL = `http://sv-dev.noveogroup.com/api/getPayments?token=${SALARY_API_KEY}&`;
+  const EMPLOYEE_URL = `https://se-demo.noveogroup.com/api/getPayments?token=${EMPLOYEE_API_KEY}&`;
    //var BASE_URL = `http://sv-dev.noveogroup.com/api/getPayments?token=${API_KEY}&`;
    //const BASE_URL = `https://se-demo.noveogroup.com/api/getPayments?token=${API_KEY}&`;
   // var SALARY_URL ='../json/SalaryViewerConnectionData.json';
@@ -97,8 +98,8 @@
     if (payments) {
       for (let year in payments) {
         for (let month in payments[year]) {
-          const { efforts, accrued } = payments[year][month];
-          const { total, salary_currency } = accrued;
+          const {  'RUR':currency, efforts, accrued } = payments[year][month];
+          const { total } = accrued;
           //const { cards_1, cards_2, cards_3, cards_4 } = paid_llc;
           //const { inc_1, inc_2, inc_overpaid, prepayment } = paid_inc;
           const monthNum = getNumberByMonth(month);
@@ -110,7 +111,7 @@
             //name,
             //surname,
             date,
-            salary_currency,
+            currency,
             efforts,
             //overpaid,
             //benefit, 
