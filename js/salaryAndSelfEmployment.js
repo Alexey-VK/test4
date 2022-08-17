@@ -98,7 +98,7 @@
     if (payments) {
       for (let year in payments) {
         for (let month in payments[year]) {
-          const {  'RUR':currency, efforts, accrued } = payments[year][month];
+          const {  efforts, accrued } = payments[year][month];
           const { total } = accrued;
           //const { cards_1, cards_2, cards_3, cards_4 } = paid_llc;
           //const { inc_1, inc_2, inc_overpaid, prepayment } = paid_inc;
@@ -111,7 +111,7 @@
             //name,
             //surname,
             date,
-            currency,
+            currency: 'RUB',
             efforts,
             //overpaid,
             //benefit, 
